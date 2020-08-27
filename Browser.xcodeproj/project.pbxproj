@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC82AA7E24F8148A00C14593 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC82AA7D24F8148A00C14593 /* WebKit.framework */; };
+		ECBC4DC224F801F20049E0FE /* UrlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC4DC124F801F20049E0FE /* UrlCell.swift */; };
+		ECBC4DC424F801FE0049E0FE /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC4DC324F801FE0049E0FE /* Url.swift */; };
+		ECBC4DC724F802460049E0FE /* SavedUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC4DC624F802460049E0FE /* SavedUrlViewController.swift */; };
 		ECD6FB2F24D4E01E00C393D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6FB2E24D4E01E00C393D8 /* AppDelegate.swift */; };
 		ECD6FB3124D4E01E00C393D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6FB3024D4E01E00C393D8 /* SceneDelegate.swift */; };
-		ECD6FB3324D4E01E00C393D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6FB3224D4E01E00C393D8 /* ViewController.swift */; };
+		ECD6FB3324D4E01E00C393D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6FB3224D4E01E00C393D8 /* WebViewController.swift */; };
 		ECD6FB3624D4E01E00C393D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD6FB3424D4E01E00C393D8 /* Main.storyboard */; };
 		ECD6FB3824D4E01F00C393D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD6FB3724D4E01F00C393D8 /* Assets.xcassets */; };
 		ECD6FB3B24D4E01F00C393D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD6FB3924D4E01F00C393D8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC82AA7D24F8148A00C14593 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ECBC4DC124F801F20049E0FE /* UrlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlCell.swift; sourceTree = "<group>"; };
+		ECBC4DC324F801FE0049E0FE /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
+		ECBC4DC624F802460049E0FE /* SavedUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUrlViewController.swift; sourceTree = "<group>"; };
 		ECD6FB2B24D4E01E00C393D8 /* Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6FB2E24D4E01E00C393D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD6FB3024D4E01E00C393D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECD6FB3224D4E01E00C393D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECD6FB3224D4E01E00C393D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		ECD6FB3524D4E01E00C393D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECD6FB3724D4E01F00C393D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD6FB3A24D4E01F00C393D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +39,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC82AA7E24F8148A00C14593 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC82AA7C24F8148A00C14593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC82AA7D24F8148A00C14593 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECBC4DBE24F801B20049E0FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6FB3224D4E01E00C393D8 /* WebViewController.swift */,
+				ECBC4DC624F802460049E0FE /* SavedUrlViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECBC4DBF24F801C50049E0FE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC4DC324F801FE0049E0FE /* Url.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ECBC4DC024F801CF0049E0FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC4DC124F801F20049E0FE /* UrlCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECBC4DC524F8020E0049E0FE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6FB2E24D4E01E00C393D8 /* AppDelegate.swift */,
+				ECD6FB3024D4E01E00C393D8 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		ECD6FB2224D4E01E00C393D8 = {
 			isa = PBXGroup;
 			children = (
 				ECD6FB2D24D4E01E00C393D8 /* Browser */,
 				ECD6FB2C24D4E01E00C393D8 /* Products */,
+				EC82AA7C24F8148A00C14593 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +108,12 @@
 		ECD6FB2D24D4E01E00C393D8 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
-				ECD6FB2E24D4E01E00C393D8 /* AppDelegate.swift */,
-				ECD6FB3024D4E01E00C393D8 /* SceneDelegate.swift */,
-				ECD6FB3224D4E01E00C393D8 /* ViewController.swift */,
-				ECD6FB3424D4E01E00C393D8 /* Main.storyboard */,
+				ECBC4DC524F8020E0049E0FE /* Delegates */,
+				ECBC4DC024F801CF0049E0FE /* Cells */,
+				ECBC4DBF24F801C50049E0FE /* Entities */,
+				ECBC4DBE24F801B20049E0FE /* Controllers */,
 				ECD6FB3724D4E01F00C393D8 /* Assets.xcassets */,
+				ECD6FB3424D4E01E00C393D8 /* Main.storyboard */,
 				ECD6FB3924D4E01F00C393D8 /* LaunchScreen.storyboard */,
 				ECD6FB3C24D4E01F00C393D8 /* Info.plist */,
 			);
@@ -138,9 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD6FB3324D4E01E00C393D8 /* ViewController.swift in Sources */,
+				ECD6FB3324D4E01E00C393D8 /* WebViewController.swift in Sources */,
 				ECD6FB2F24D4E01E00C393D8 /* AppDelegate.swift in Sources */,
 				ECD6FB3124D4E01E00C393D8 /* SceneDelegate.swift in Sources */,
+				ECBC4DC224F801F20049E0FE /* UrlCell.swift in Sources */,
+				ECBC4DC724F802460049E0FE /* SavedUrlViewController.swift in Sources */,
+				ECBC4DC424F801FE0049E0FE /* Url.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Browser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Browser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
